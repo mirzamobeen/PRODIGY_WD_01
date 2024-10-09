@@ -1,0 +1,184 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Title Color */
+.title {
+    color: #007bff; /* Blue color for title */
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Navbar scroll effect */
+.navbar.scrolled {
+    background-color: #000;
+}
+
+/* Header Section */
+header {
+    background: url('bg.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header .title {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Products Section */
+#products {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.product-category {
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+/* About Section */
+#about {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Founder Section */
+#founder {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.founder-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.founder-img {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.founder-message {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.blue-text {
+    color: #007bff; /* Blue color for founder's message */
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    margin: 10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-item img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
